@@ -1,0 +1,275 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 09 23:03:16 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>320 seconds (320389 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_AddToCart_and_BuyNow.Test_Add_to_cart()'><b>Test_Add_to_cart</b><br>Test class: Flipkart.ExitTest.Test_AddToCart_and_BuyNow</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Remote Control&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;IN-PG02NKJ9&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4675fca9ffeb2e3d3337c3e6784dfd5, findElement {using=link text, value=Remote Control}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AHAMAD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50145/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4675fca9ffeb2e3d3337c3e6784dfd5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at PageFactory.AddToCart_and_BuyNowPage.go_to_electronics(AddToCart_and_BuyNowPage.java:64)
+	at Flipkart.ExitTest.Test_AddToCart_and_BuyNow.Test_Add_to_cart(Test_AddToCart_and_BuyNow.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122461713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122461713'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Remote Control&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;IN-PG02NKJ9&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4675fca9ffeb2e3d3337c3e6784dfd5, findElement {using=link text, value=Remote Control}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AHAMAD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50145/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4675fca9ffeb2e3d3337c3e6784dfd5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at PageFactory.AddToCart_and_BuyNowPage.go_to_electronics(AddToCart_and_BuyNowPage.java:64)
+	at Flipkart.ExitTest.Test_AddToCart_and_BuyNow.Test_Add_to_cart(Test_AddToCart_and_BuyNow.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>32</td>
+<td>Flipkart.ExitTest.Test_AddToCart_and_BuyNow@51e8e6e6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Footer.Test_Social_Media()'><b>Test_Social_Media</b><br>Test class: Flipkart.ExitTest.Test_Footer</td>
+<td></td>
+<td>20</td>
+<td>Flipkart.ExitTest.Test_Footer@5b408dc3</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Headers.Test_MotorVehicle()'><b>Test_MotorVehicle</b><br>Test class: Flipkart.ExitTest.Test_Headers</td>
+<td></td>
+<td>9</td>
+<td>Flipkart.ExitTest.Test_Headers@9ed238c</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_SearchFuctionality.Test_compare_product()'><b>Test_compare_product</b><br>Test class: Flipkart.ExitTest.Test_SearchFuctionality</td>
+<td></td>
+<td>12</td>
+<td>Flipkart.ExitTest.Test_SearchFuctionality@56276db8</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_AddToCart_and_BuyNow.Test_Buy_Now()'><b>Test_Buy_Now</b><br>Test class: Flipkart.ExitTest.Test_AddToCart_and_BuyNow</td>
+<td></td>
+<td>9</td>
+<td>Flipkart.ExitTest.Test_AddToCart_and_BuyNow@51e8e6e6</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Travel.Test_searchFlight()'><b>Test_searchFlight</b><br>Test class: Flipkart.ExitTest.Test_Travel</td>
+<td></td>
+<td>24</td>
+<td>Flipkart.ExitTest.Test_Travel@36676c1a</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Grocery.Test_AddGroceryItem()'><b>Test_AddGroceryItem</b><br>Test class: Flipkart.ExitTest.Test_Grocery</td>
+<td></td>
+<td>8</td>
+<td>Flipkart.ExitTest.Test_Grocery@56f6d40b</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_SearchFuctionality.Test_Hower_on_product()'><b>Test_Hower_on_product</b><br>Test class: Flipkart.ExitTest.Test_SearchFuctionality</td>
+<td></td>
+<td>13</td>
+<td>Flipkart.ExitTest.Test_SearchFuctionality@56276db8</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Basic_Flipkart.Test_verify_Title()'><b>Test_verify_Title</b><br>Test class: Flipkart.ExitTest.Test_Basic_Flipkart</td>
+<td></td>
+<td>0</td>
+<td>Flipkart.ExitTest.Test_Basic_Flipkart@7829b776</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Grocery.Test_checkGroeryCart()'><b>Test_checkGroeryCart</b><br>Test class: Flipkart.ExitTest.Test_Grocery</td>
+<td></td>
+<td>10</td>
+<td>Flipkart.ExitTest.Test_Grocery@56f6d40b</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Basic_Flipkart.Test_Search_Item()'><b>Test_Search_Item</b><br>Test class: Flipkart.ExitTest.Test_Basic_Flipkart</td>
+<td></td>
+<td>4</td>
+<td>Flipkart.ExitTest.Test_Basic_Flipkart@7829b776</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Footer.Test_FAQ()'><b>Test_FAQ</b><br>Test class: Flipkart.ExitTest.Test_Footer</td>
+<td></td>
+<td>8</td>
+<td>Flipkart.ExitTest.Test_Footer@5b408dc3</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Headers.Test_Home_Furnishings()'><b>Test_Home_Furnishings</b><br>Test class: Flipkart.ExitTest.Test_Headers</td>
+<td></td>
+<td>7</td>
+<td>Flipkart.ExitTest.Test_Headers@9ed238c</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Grocery.Test_CheckGrocetyFilter()'><b>Test_CheckGrocetyFilter</b><br>Test class: Flipkart.ExitTest.Test_Grocery</td>
+<td></td>
+<td>21</td>
+<td>Flipkart.ExitTest.Test_Grocery@56f6d40b</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Headers.Test_MensFasion()'><b>Test_MensFasion</b><br>Test class: Flipkart.ExitTest.Test_Headers</td>
+<td></td>
+<td>6</td>
+<td>Flipkart.ExitTest.Test_Headers@9ed238c</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_SearchFuctionality.Test_SearchAndCheckSpecification()'><b>Test_SearchAndCheckSpecification</b><br>Test class: Flipkart.ExitTest.Test_SearchFuctionality</td>
+<td></td>
+<td>7</td>
+<td>Flipkart.ExitTest.Test_SearchFuctionality@56276db8</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Headers.Test_Top_offer()'><b>Test_Top_offer</b><br>Test class: Flipkart.ExitTest.Test_Headers</td>
+<td></td>
+<td>3</td>
+<td>Flipkart.ExitTest.Test_Headers@9ed238c</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Headers.Test_BestSeller()'><b>Test_BestSeller</b><br>Test class: Flipkart.ExitTest.Test_Headers</td>
+<td></td>
+<td>25</td>
+<td>Flipkart.ExitTest.Test_Headers@9ed238c</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Footer.Test_Careers()'><b>Test_Careers</b><br>Test class: Flipkart.ExitTest.Test_Footer</td>
+<td></td>
+<td>19</td>
+<td>Flipkart.ExitTest.Test_Footer@5b408dc3</td></tr>
+<tr>
+<td title='Flipkart.ExitTest.Test_Basic_Flipkart.Test_loginFlipkart()'><b>Test_loginFlipkart</b><br>Test class: Flipkart.ExitTest.Test_Basic_Flipkart</td>
+<td></td>
+<td>3</td>
+<td>Flipkart.ExitTest.Test_Basic_Flipkart@7829b776</td></tr>
+</table><p>
+</body>
+</html>

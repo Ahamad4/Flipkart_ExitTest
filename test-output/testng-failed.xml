@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Flipkart.ExitTest.Test_Footer">
+        <methods>
+          <include name="reportFlush"/>
+          <include name="Test_Social_Media"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- Flipkart.ExitTest.Test_Footer -->
+      <class name="Flipkart.ExitTest.Test_Grocery">
+        <methods>
+          <include name="reportFlush"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="launchBrowser"/>
+          <include name="Test_AddGroceryItem"/>
+        </methods>
+      </class> <!-- Flipkart.ExitTest.Test_Grocery -->
+      <class name="Flipkart.ExitTest.Test_Travel">
+        <methods>
+          <include name="reportFlush"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="launchBrowser"/>
+          <include name="Test_searchFlight"/>
+        </methods>
+      </class> <!-- Flipkart.ExitTest.Test_Travel -->
+      <class name="Flipkart.ExitTest.Test_Headers">
+        <methods>
+          <include name="reportFlush"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="launchBrowser"/>
+          <include name="Test_MotorVehicle"/>
+        </methods>
+      </class> <!-- Flipkart.ExitTest.Test_Headers -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

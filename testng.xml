@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="7" name="Test">
+    <classes>   
+     <class name="Flipkart.ExitTest.Test_Basic_Flipkart"/>
+      <class name="Flipkart.ExitTest.Test_Headers"/>
+      <class name="Flipkart.ExitTest.Test_SearchFuctionality"/>
+      <class name="Flipkart.ExitTest.Test_AddToCart_and_BuyNow"/>
+      <class name="Flipkart.ExitTest.Test_Grocery"/>
+      <class name="Flipkart.ExitTest.Test_Travel"/>
+      <class name="Flipkart.ExitTest.Test_Footer"/>      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
